@@ -6,6 +6,17 @@ import java.util.Scanner;
 public class Main {
     final static Scanner scanner = new Scanner(System.in); // Do not change this line
 
+    public static void main(String[] args) {
+        greet("Aid", "2018"); // change it as you need
+        remindName();
+        guessAge();
+        count();
+        test();
+        // ...
+        end();
+
+    }
+
     static void greet(String assistantName, String birthYear) {
         System.out.println("Hello! My name is " + assistantName + ".");
         System.out.println("I was created in " + birthYear + ".");
