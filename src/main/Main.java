@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+
 public class Main {
     final static Scanner scanner = new Scanner(System.in); // Do not change this line
 
@@ -42,6 +43,20 @@ public class Main {
         System.out.println("2. To decompose a program into several small subroutines.");
         System.out.println("3. To determine the execution time of a program.");
         System.out.println("4. To interrupt the execution of a program.");
+        boolean response = true;
+        while (response) {
+            int number1 = scanner.nextInt();
+            if (number1 == 2) {
+                end();
+
+                break;
+            } else {
+                System.out.println("please, try again.");
+            }
+        }
+    }
+
+    static void end() {
+        System.out.println("Congratulations, have a nice day!"); // Do not change this text
     }
 }
-
